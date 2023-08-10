@@ -33,7 +33,7 @@
                             Indian summer.
                         </p>
                         <h3 class="text-white font-bold text-[30px] mt-4">
-                            $49.55
+                            $49.55jlk 
                             <span
                                 class="theme-color text-[20px] text-red-500"
                                 >$49.55</span
