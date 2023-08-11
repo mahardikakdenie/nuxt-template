@@ -26,11 +26,11 @@
                                             <button
                                                 v-for="(icon, i) in icons"
                                                 :key="i"
-                                                class="text-white bg-blue-700 
+                                                class="text-white bg-[#232323d9] 
                                                     hover:bg-red-800 focus:ring-4 focus:outline-none 
                                                     focus:ring-blue-300 font-medium rounded-md text-sm p-2.5 
                                                     text-center inline-flex items-center mr-2 dark:bg-blue-600 
-                                                    dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:text-white
+                                                    dark:hover:bg-[#232323d9] dark:focus:ring-blue-800 hover:text-white
                                                 "
                                             >
                                                 <component

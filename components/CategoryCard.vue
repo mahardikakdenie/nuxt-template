@@ -8,7 +8,7 @@
         />
     </a>
     <a style="top: unset" class="bottom-[60px] flex items-end justify-center h-[100%] absolute w-[100%]">
-        <div style="backdrop-filter: blur(4px)" class="p-[40px] w-[50%] bg-[#232323d9] text-white">
+        <div style="backdrop-filter: blur(4px)" class="p-[20px] w-[80%] bg-[#232323d9] text-white hover:bg-[#e22454] text-center">
             <h2 class="mb-2 font-bold text-[24px]">New Hoodie</h2>
             <span>BUY ONE GET ONE</span>
         </div>
