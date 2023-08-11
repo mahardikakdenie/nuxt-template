@@ -11,7 +11,7 @@
                             Raw Ham Colorblock T-shirt
                         </h2>
                         <div class="flex justify-start gap-4">
-                            <IconStarFilled 
+                            <IconStar
                                 v-for="i in 5"
                                 :key="i" 
                             />
@@ -26,7 +26,7 @@
                             Indian summer.
                         </p>
                         <h3 class="text-white font-bold text-[30px] mt-4">
-                            $49.55jlk 
+                            $49.55
                             <span
                                 class="theme-color text-[20px] text-red-500"
                                 >$49.55</span

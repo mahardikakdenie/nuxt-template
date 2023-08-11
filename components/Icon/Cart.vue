@@ -1,6 +1,6 @@
 <template>
 <svg
-    class="w-3 h-3 text-black"
+    :class="`${customClass} text-black`"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -16,10 +16,13 @@
 </svg>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+defineProps({
+    customClass: {
+        type: String,
+        default: 'w-3 h-3',
+    },
+});
 </script>
 
 <style>
