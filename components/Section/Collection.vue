@@ -60,6 +60,8 @@ const productCollection = [
         img: 'https://voxo.vercel.app/images/fashion/product/front/5.jpg',
     },
 ];
+
+
 </script>
 
 <style>
