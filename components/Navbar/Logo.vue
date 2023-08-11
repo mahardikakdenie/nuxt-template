@@ -1,11 +1,11 @@
 <template>
-<a href="https://flowbite.com/" class="flex items-center">
+<div @click="$router.push('/')" class="flex items-center cursor-pointer">
     <img
         src="https://voxo.vercel.app/images/logo.png"
         class="h-8 mr-3"
         alt="Flowbite Logo"
     />
-</a>
+</div>
 </template>
 
 <script>
