@@ -82,7 +82,7 @@
                                         style="background-image: url(https://voxo.vercel.app/images/fashion/banner/6.jpg)"
                                     >
                                         <div class="flex justify-center items-end">
-                                            <div class="py-[40px] px-[60px] absolute top-16 bg-[#232323ed] text-[#fff]">
+                                            <div class="py-[40px] px-[60px] absolute top-16 text-[#fff] bg-[#232323ed] transition-colors duration-500 ease-in-out hover:bg-[#e22454]">
                                                 <h3 class="mb-1 font-bold">New Jacket</h3>
                                                 <small class="text-white font-bold">
                                                     Discount 70%
@@ -97,7 +97,7 @@
                                         style="background-image: url(https://voxo.vercel.app/images/fashion/banner/7.jpg)"
                                     >
                                         <div class="flex justify-center items-end">
-                                            <div class="py-[40px] px-[60px] absolute top-16 bg-[#232323ed] text-[#fff]">
+                                            <div class="py-[40px] px-[60px] absolute top-16 bg-[#232323ed] text-[#fff] transition-colors duration-500 ease-in-out hover:bg-[#e22454]">
                                                 <h3 class="mb-1 font-bold">New Jacket</h3>
                                                 <small class="text-white font-bold">
                                                     Discount 70%

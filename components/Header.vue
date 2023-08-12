@@ -10,23 +10,38 @@
                 <NavbarItemList />
             </div>
             <div class="flex">
-                <NavbarButtonAction />
-                <button type="button" class="text-white bg-[#24292F] 
-                    hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none 
+                <!-- <NavbarButtonAction /> -->
+                <button type="button" class="text-white bg-[#e22454] 
+                    hover:bg-white hover:border hover:border-[#e22454] hover:text-[#e22454] 
+                    focus:ring-4 focus:outline-none 
                     focus:ring-[#24292F]/50 font-medium rounded-lg text-sm 
-                    px-[20px] py-[3px] text-center inline-flex items-center 
+                    px-[30px] py-[10px] text-center inline-flex items-center 
                     dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2 mt-2
+                    transition-colors duration-500 ease-in-out
                 "
+                    @mouseenter="setMouseEnter"
+                    @mouseleave="setMouseEnter"
                 >
-                    Sign in
+                    <IconCart
+                        id="cart"
+                        :customClass="`
+                            mr-2 w-4 h-4
+                            transition-colors duration-500 ease-in-out ${ isMouseEnter ? 'text-[#e22454]' : 'text-white' }
+                        `" 
+                    /> 
+                        Keranjang
                 </button>
             </div>
         </div>
     </nav>
 </template>
 
-<script>
-export default {};
+<script setup>
+const isMouseEnter = ref(false);
+const setMouseEnter = () => {
+    isMouseEnter.value = !isMouseEnter.value;
+};
 </script>
 
-<style></style>
+<style>
+</style>
