@@ -6,10 +6,10 @@
 </div>
 </template>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
 
   * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
 .page-enter-active,
