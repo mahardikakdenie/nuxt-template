@@ -6,7 +6,7 @@
 </div>
 </template>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Roboto:wght@100&display=swap');
 
   * {
     font-family: 'Josefin Sans', sans-serif;
