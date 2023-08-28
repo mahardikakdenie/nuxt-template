@@ -3,8 +3,12 @@
     <div class="grid grid-rows-1">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-4">
-                <div class="border">
-                    <accourdion />
+                <div class="border p-5">
+                    <accourdion>
+                        <template #heading>
+                            <span>Halo</span>
+                        </template>
+                    </accourdion>
                 </div>
             </div>
             <div class="col-span-8">
