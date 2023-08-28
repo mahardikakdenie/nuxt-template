@@ -4,21 +4,14 @@
         <ol
             class="inline-flex items-center"
         >
-            <li v-for="(item, i) in items" :key="i" class="inline-flex items-center text-center">
+            <li v-for="(item, i) in paths" :key="i" class="inline-flex items-center text-center">
                 <router-link
                     to="/"
                     class="inline-flex items-center justify-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
                 >
-                    <icon-home />  {{ item.title }}
-                    <IconRight v-if="!isLastIndex(i)" customClass="w-3 h-3 text-black mr-2" />
+                    <icon-home v-if="isFirstIndex(i)" />  {{ item.title }}
+                    <IconRight v-if="!isLastIndex(i)" customClass="w-3 h-3 text-black mx-2" />
                 </router-link>
-                <!-- <router-link
-                    v-else
-                    to="/"
-                    class="inline-flex items-center text-sm font-bold text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
-                >
-                    {{item.title}}
-                </router-link> -->
             </li>
         </ol>
     </nav>
@@ -32,7 +25,11 @@ const items = [
         link: '/',
     },
     {
-        title: 'Project',
+        title: 'Category',
+        link: '/proejct',
+    },
+    {
+        title: 'Category',
         link: '/proejct',
     }
 ];
@@ -46,7 +43,11 @@ const props = defineProps({
         link: '/',
     },
     {
-        title: 'Project',
+        title: 'Category',
+        link: '/proejct',
+    },
+    {
+        title: 'Category',
         link: '/proejct',
     }
 ],
@@ -54,6 +55,9 @@ const props = defineProps({
 });
 
 const isLastIndex = (currentIndex) => {
+    console.log("🚀 ~ file: Breadcrumb.vue:54 ~ isLastIndex ~ currentIndex:", currentIndex === props.paths.length - 1)
+    console.log("🚀 ~ file: Breadcrumb.vue:55 ~ isLastIndex ~ props.paths.length - 1:", props.paths.length - 1)
+    console.log("🚀 ~ file: Breadcrumb.vue:55 ~ isLastIndex ~ currentIndex:", currentIndex)
     return currentIndex === props.paths.length - 1;
 };
 

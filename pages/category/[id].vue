@@ -1,6 +1,7 @@
 <template>
 <div class="max-w-xxl">
     <SectionTitleDetail title="Detail Category" />
+    <SectionCategoryDetail />
 </div>
 </template>
 
