@@ -6,7 +6,7 @@
                 <div class="border p-5">
                     <accourdion>
                         <template #heading>
-                            <span>Halo</span>
+                            <span>Brand</span>
                         </template>
                     </accourdion>
                 </div>

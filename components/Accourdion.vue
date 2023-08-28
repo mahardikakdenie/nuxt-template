@@ -95,11 +95,11 @@ const onMouseHover = () => {
 
 <style scoped>
 .accordion {
-	@apply relative w-[100%] bg-[#fff] border-t border-solid border-[#ddd] border-b-0 border-r-2 border-l-2;
+	@apply relative w-[100%] bg-[#fff] border-b-0;
 }
 
 .accordion-header {
-	@apply p-[10px] bg-[#f5f5f5] border-b border-solid border-[#ddd] cursor-pointer flex items-center;
+	@apply p-[10px] bg-[#f5f5f5] cursor-pointer flex items-center;
 }
 
 .accordion-left-icon {
@@ -115,6 +115,6 @@ const onMouseHover = () => {
 }
 
 .accordion-body {
-	@apply p-[10px]  border-b border-solid border-[#ddd];
+	@apply p-[10px];
 }
 </style>
