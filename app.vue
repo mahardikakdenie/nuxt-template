@@ -6,10 +6,13 @@
 </div>
 </template>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Roboto:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Roboto:wght@100&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans:ital,wght@1,500&family=Roboto:wght@100&display=swap');
 
   * {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
   }
 
 .page-enter-active,
