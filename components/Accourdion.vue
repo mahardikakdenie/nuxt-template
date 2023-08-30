@@ -91,6 +91,12 @@ const handleClick = () => {
 const onMouseHover = () => {
 	isOverElement.value = !isOverElement.value;
 };
+
+onMounted(() => {
+	if(prop.openFirst) {
+		isOpen.value = true;
+	}
+});
 </script>
 
 <style scoped>
