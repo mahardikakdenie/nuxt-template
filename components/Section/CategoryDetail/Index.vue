@@ -22,6 +22,25 @@
                         </template>
                     </accourdion>
                 </div>
+                <div class="border p-5 mt-5">
+                    <accourdion openFirst>
+                        <template #heading>
+                            <span>Color</span>
+                        </template>
+                        <template #body>
+                            <div class="accordion-body">
+                                <ul class="category-list">
+                                    <li v-for="(brand, i) in brands" :key="i" class="block my-[10px] text-ellipsis whitespace-nowrap">
+                                        <div class="form-check">
+                                            <input type="checkbox" name="" class="check-it">
+                                            <label for="" class="form-check-label">{{ brand }}</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </template>
+                    </accourdion>
+                </div>
             </div>
             <div class="col-span-8">
                 <!-- Banner -->
@@ -48,20 +67,40 @@
                 <!-- Action Header -->
                 <div class="grid grid-rows-1">
                     <div class="grid grid-cols-12">
-                        <div class="flex items-center">
-                            <div v-for="i in 2" :key="i" class="flex items-center flex-wrap gap-4">
-                                <div>
-                                    <div class="border border-solid border-[#eff2f7] text-[#8f8397] rounded-none">
-                                        <select v-model="productFilter" name="" class="dropdown-toggle">
-                                            <option disabled value="" class="text-[12px] dropdown-item">
-                                                Products per Page
-                                            </option>
-                                            <option v-for="(brand, i) in brands" :key="i" :value="brand" class="text-[12px] dropdown-item">
-                                                {{ brand }}
-                                            </option>
-                                        </select>
+                        <div class="col-span-4">
+                            <div class="flex items-center">
+                                <div v-for="i in 2" :key="i" class="flex items-center flex-wrap gap-5 mr-2">
+                                    <div>
+                                        <div class="border border-solid border-[#eff2f7] text-[#8f8397] rounded-none">
+                                            <select v-model="productFilter" name="" class="dropdown-toggle">
+                                                <option disabled value="" class="text-[12px] dropdown-item">
+                                                    Products per Page
+                                                </option>
+                                                <option v-for="(brand, i) in brands" :key="i" :value="brand" class="text-[12px] dropdown-item">
+                                                    {{ brand }}
+                                                </option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-span-8 flex justify-end w-[100%]">
+                            <div class="ml-auto flex justify-end w-[100%]">
+                                <ul class="items-center flex flex-wrap gap-4">
+                                    <li 
+                                        v-for="(layout,i) in layouts" 
+                                        :key="i" 
+                                        class="opacity-100 w-[35px] cursor-pointer hover:bg-[#eff2f7] hover:h-[34px]" 
+                                        :class="{'layout-active': layout === activeLayout, 'opacity-50': layout !== activeLayout}"
+                                        @click="activeLayout = layout"
+                                    >
+                                        <a class="items-center flex h-[100%] justify-center">
+                                            <img :src="layout" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -79,6 +118,16 @@ const brands = [
     'Louis Philippe',
     'Fila'
 ];
+
+const layouts = [
+    'https://voxo.vercel.app/_nuxt/grid-2.9871edb1.svg',
+    'https://voxo.vercel.app/_nuxt/grid-3.bd64c199.svg',
+    'https://voxo.vercel.app/_nuxt/grid.e3b46688.svg',
+    'https://voxo.vercel.app/_nuxt/list.6abcd737.svg'
+
+];
+
+const activeLayout = ref('https://voxo.vercel.app/_nuxt/grid-2.9871edb1.svg');
 
 const productFilter = ref('')
 </script>
@@ -106,5 +155,9 @@ const productFilter = ref('')
 
 .dropdown-item {
     @apply block w-[100%] py-1 px-4 clear-both font-normal text-inherit whitespace-nowrap bg-transparent border-0;
+}
+
+.layout-active {
+    @apply bg-[#eff2f7] border-4 h-[34px];
 }
 </style>
