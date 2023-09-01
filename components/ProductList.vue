@@ -30,6 +30,22 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-4">
+                <div class="flex items-center justify-between">
+                    <div class="font-light text-[#7e7e7e]">Sweatshirts</div>
+                    <ul class="m-0 gap-2 mt-1 flex">
+                        <li v-for="i in 5" :key="i">
+                            <icon-star
+                                customClass="text-yellow-400 w-4 h-4"
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-2 flex items-center justify-between">
+                    <router-link to="/">Switter</router-link>
+                    <h3 class="text-[#e22454] text-[20px] mt-5">$60.08</h3>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Gird Layout -->

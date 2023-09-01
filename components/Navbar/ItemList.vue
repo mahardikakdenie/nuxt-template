@@ -34,13 +34,13 @@
             v-for="(navItem, i) in navItems"
             :key="i"
         >
-            <a
+            <router-link
                 class="list-nav"
                 aria-current="page"
                 :to="navItem.path"
             >
                 {{ navItem.label }}
-            </a>
+            </router-link>
         </li>
     </ul>
 </div>

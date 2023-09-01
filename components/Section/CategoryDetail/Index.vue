@@ -1,5 +1,5 @@
 <template>
-<div class="max-w-[1400px] mx-auto px-3">
+<div class="max-w-[1400px] mx-auto px-3" style="height: 200px !important">
     <div class="grid grid-rows-1">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-4 sticky">
@@ -12,9 +12,17 @@
                         title="Color" 
                         :items="brands" 
                     />
+                    <section-category-detail-side-accordion-menu 
+                        title="Color" 
+                        :items="brands" 
+                    />
+                    <section-category-detail-side-accordion-menu 
+                        title="Color" 
+                        :items="brands" 
+                    />
                 </div>
             </div>
-            <div class="col-span-8">
+            <div class="col-span-8 overflow-scroll h-auto">
                 <!-- Banner -->
                 <banner-detail />
                 <!-- Action Header -->
