@@ -55,9 +55,6 @@ const props = defineProps({
 });
 
 const isLastIndex = (currentIndex) => {
-    console.log("🚀 ~ file: Breadcrumb.vue:54 ~ isLastIndex ~ currentIndex:", currentIndex === props.paths.length - 1)
-    console.log("🚀 ~ file: Breadcrumb.vue:55 ~ isLastIndex ~ props.paths.length - 1:", props.paths.length - 1)
-    console.log("🚀 ~ file: Breadcrumb.vue:55 ~ isLastIndex ~ currentIndex:", currentIndex)
     return currentIndex === props.paths.length - 1;
 };
 

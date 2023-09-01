@@ -27,11 +27,11 @@
                     v-for="(layout,i) in layouts" 
                     :key="i" 
                     class="opacity-100 w-[35px] cursor-pointer hover:bg-[#eff2f7] hover:h-[34px]" 
-                    :class="{'layout-active': layout === activeLayout, 'opacity-50': layout !== activeLayout}"
-                    @click="activeLayout = layout"
+                    :class="{'layout-active': activeLayout === layout.key, 'opacity-50': layout !== activeLayout}"
+                    @click="setActiveLayout(layout.key)"
                 >
                     <a class="items-center flex h-[100%] justify-center">
-                        <img :src="layout" alt="">
+                        <img :src="layout.img" alt="">
                     </a>
                 </li>
             </ul>
@@ -42,14 +42,41 @@
 </template>
 
 <script setup>
+import { useProductStore } from '@/store/product'
 const layouts = [
-    'https://voxo.vercel.app/_nuxt/grid-2.9871edb1.svg',
-    'https://voxo.vercel.app/_nuxt/grid-3.bd64c199.svg',
-    'https://voxo.vercel.app/_nuxt/grid.e3b46688.svg',
-    'https://voxo.vercel.app/_nuxt/list.6abcd737.svg'
+    {
+        key: 'two-layout',
+        img: 'https://voxo.vercel.app/_nuxt/grid-2.9871edb1.svg',
+    },
+    {
+        key: 'three-layout',
+        img: 'https://voxo.vercel.app/_nuxt/grid-3.bd64c199.svg'
+    },
+    {
+        key: 'four-layout',
+        img: 'https://voxo.vercel.app/_nuxt/grid.e3b46688.svg',
+    },
+    {
+        key: 'grid-layout',
+        img: 'https://voxo.vercel.app/_nuxt/list.6abcd737.svg'
+    }
 ];
 
-const activeLayout = ref('https://voxo.vercel.app/_nuxt/grid-2.9871edb1.svg');
+const brands = [
+    'Zara',
+    'Louis Solly',
+    'Louis Philippe',
+    'Fila'
+];
+
+const store = useProductStore();
+
+const setActiveLayout = (layoutKey) => {
+    store.setActiveLayout(layoutKey);
+};
+
+
+const activeLayout = computed(() => store.activeLayout);
 
 const productFilter = ref('');
 </script>
