@@ -9,7 +9,15 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+      '@nuxtjs/tailwindcss',
+      '@pinia/nuxt',
+  ],
+  pinia: {
+    autoImports: [
+      'defineStore',  // import { defineStore } from 'pinia'
+    ]
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
