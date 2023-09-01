@@ -2,7 +2,7 @@
 <div class="max-w-[1400px] mx-auto px-3">
     <div class="grid grid-rows-1">
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-4">
+            <div class="col-span-4 sticky">
                 <div class="">
                         <section-category-detail-side-accordion-menu 
                         title="Brand" 
