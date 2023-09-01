@@ -3,14 +3,16 @@
     <div class="grid grid-rows-1">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-4">
-                <section-category-detail-side-accordion-menu 
-                    title="Brand" 
-                    :items="brands" 
-                />
-                <section-category-detail-side-accordion-menu 
-                    title="Color" 
-                    :items="brands" 
-                />
+                <div class="">
+                        <section-category-detail-side-accordion-menu 
+                        title="Brand" 
+                        :items="brands" 
+                    />
+                    <section-category-detail-side-accordion-menu 
+                        title="Color" 
+                        :items="brands" 
+                    />
+                </div>
             </div>
             <div class="col-span-8">
                 <!-- Banner -->

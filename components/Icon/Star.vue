@@ -1,6 +1,6 @@
 <template>
 <svg
-    class="w-3 h-3 text-yellow-400"
+    :class="customClass"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
@@ -10,10 +10,13 @@
 </svg>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+defineProps({
+	customClass: {
+		type: String,
+		default: 'w-3 h-3 text-yellow-400',
+	},
+});
 </script>
 
 <style>
