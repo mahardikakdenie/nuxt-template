@@ -4,19 +4,19 @@
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-4 sticky">
                 <div class="">
-                        <section-category-detail-side-accordion-menu 
+                    <section-category-detail-side-accordion-menu
                         title="Brand" 
                         :items="brands" 
                     />
-                    <section-category-detail-side-accordion-menu 
+                    <section-category-detail-side-accordion-menu
                         title="Color" 
                         :items="brands" 
                     />
-                    <section-category-detail-side-accordion-menu 
+                    <section-category-detail-side-accordion-menu
                         title="Color" 
                         :items="brands" 
                     />
-                    <section-category-detail-side-accordion-menu 
+                    <section-category-detail-side-accordion-menu
                         title="Color" 
                         :items="brands" 
                     />

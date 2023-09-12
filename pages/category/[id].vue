@@ -1,12 +1,25 @@
 <template>
 <div class="max-w-xxl">
-    <SectionTitleDetail title="Detail Category" />
+    <SectionTitleDetail title="Detail Category" :paths="paths" />
     <SectionCategoryDetail class="mt-6" />
 </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+const paths = [
+    {
+        title: '',
+        link: '/',
+    },
+    {
+        title: 'Category',
+        link: '/proejct',
+    },
+    {
+        title: 'Category',
+        link: '/proejct',
+    }
+]
 </script>
 
 <style>

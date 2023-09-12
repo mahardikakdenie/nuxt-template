@@ -12,6 +12,7 @@
                             v-for="(product, i) in productCollection"
                             :key="i"
                             class="gap-4"
+                            @click="$router.push(`product/${product.key}`)"
                         >
                             <div class="cursor-pointer h-[450px] w-[350px]">
                                 <div
@@ -73,18 +74,22 @@
 <script setup>
 const productCollection = ref([
     {
+        key: 'product-key',
         img: "https://voxo.vercel.app/images/fashion/product/front/1.jpg",
         show: false,
     },
     {
+        key: 'product-key',
         img: "https://voxo.vercel.app/images/fashion/product/front/3.jpg",
         show: false,
     },
     {
+        key: 'product-key',
         img: "https://voxo.vercel.app/images/fashion/product/front/4.jpg",
         show: false,
     },
     {
+        key: 'product-key',
         img: "https://voxo.vercel.app/images/fashion/product/front/5.jpg",
         show: false,
     },
