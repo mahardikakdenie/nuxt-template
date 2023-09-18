@@ -1,6 +1,7 @@
 <template>
 <div class="max-w-xxl">
     <SectionTitleDetail title="Product" :paths="paths" />
+    <SectionProductDetail />
 </div>
 </template>
 
