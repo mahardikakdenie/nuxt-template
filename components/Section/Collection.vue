@@ -7,11 +7,11 @@
             </div>
             <div class="flex justify-center">
                 <div class="grid grid-rows-1 p-6">
-                    <div class="grid grid-cols-4 gap-4">
+                    <div class="grid grid-cols-12 gap-4">
                         <div
                             v-for="(product, i) in productCollection"
                             :key="i"
-                            class="gap-4"
+                            class="gap-4 2xl:col-span-3 xl:col-span-4 sm:col-span-6 h-[550px] w-full"
                             @click="$router.push(`product/${product.key}`)"
                         >
                             <div class="cursor-pointer h-[450px] w-[350px]">
@@ -43,7 +43,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-2">
+                                <div class="my-2">
                                     <div class="flex justify-between px-6">
                                         <span> Blazers </span>
                                         <div class="flex gap-1">
